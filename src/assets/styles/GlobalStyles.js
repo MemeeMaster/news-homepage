@@ -8,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
 
     html {
         box-sizing: border-box;
+        font-size: 62.5%;
     }
   
     *, *::after, *::before {
@@ -18,6 +19,7 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Inter', sans-serif;
         margin: 0;
         padding: 0;
+        background-color: ${({ theme }) => theme.colors.offWhite};
         overflow-y: hidden;
     }
 `;

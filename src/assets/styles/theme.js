@@ -1,12 +1,12 @@
 const theme = {
-    'colors': {
-        'soft-orange': 'hsl(35, 77%, 62%)',
-        'soft-red': 'hsl(5, 85%, 63%)',
-        'off-white': 'hsl(36, 100%, 99%)',
-        'grayish-blue': 'hsl(233, 8%, 79%)',
-        'dark-grayish-blue': 'hsl(236, 13%, 42%)',
-        'dark-blue': 'hsl(240, 100%, 5%)',
-    }
-}
+  colors: {
+    softOrange: "hsl(35, 77%, 62%)",
+    softRed: "hsl(5, 85%, 63%)",
+    offWhite: "hsl(36, 100%, 99%)",
+    grayishBlue: "hsl(233, 8%, 79%)",
+    darkGrayishBlue: "hsl(236, 13%, 42%)",
+    darkBlue: "hsl(240, 100%, 5%)",
+  },
+};
 
 export default theme;

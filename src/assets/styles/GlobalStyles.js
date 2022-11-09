@@ -20,6 +20,6 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
         background-color: ${({ theme }) => theme.colors.offWhite};
-        overflow-y: hidden;
+        overflow-x: hidden;
     }
 `;

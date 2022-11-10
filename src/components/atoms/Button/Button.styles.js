@@ -9,4 +9,9 @@ export const StyledBtn = styled.button`
   letter-spacing: 2.5px;
   text-transform: uppercase;
   cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.darkBlue};
+  }
 `;

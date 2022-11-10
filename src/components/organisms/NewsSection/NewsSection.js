@@ -1,7 +1,7 @@
 import React from "react";
 import { Wrapper, StyledTitle } from "./NewsSection.styles";
-import Article from "../../molecules/Article/Article";
 import { data } from "../../../data/data";
+import New from "../../molecules/New/New";
 
 const NewsSection = () => {
   const articles = data.articles;
@@ -9,7 +9,7 @@ const NewsSection = () => {
     <Wrapper>
       <StyledTitle>New</StyledTitle>
       {articles.map((el) => (
-        <Article key={el.id} title={el.title} content={el.content} />
+        <New key={el.id} title={el.title} content={el.content} />
       ))}
     </Wrapper>
   );

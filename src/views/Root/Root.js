@@ -5,6 +5,7 @@ import theme from "../../assets/styles/theme";
 import Navigation from "../../components/molecules/Navigation/Navigation";
 import Main from "../../components/organisms/Main/Main";
 import NewsSection from "../../components/organisms/NewsSection/NewsSection";
+import ArticlesSection from "../../components/organisms/ArticlesSection/ArticlesSection";
 
 export const ContentContext = createContext({
   titleContent: "",
@@ -27,6 +28,7 @@ const Root = () => {
       <ContentContext.Provider value={HomeValues}>
         <Main />
         <NewsSection />
+        <ArticlesSection />
       </ContentContext.Provider>
     </ThemeProvider>
   );

@@ -1,21 +1,18 @@
 import React from "react";
 import Paragraph from "../../atoms/Paragraph/Paragraph";
-import PropTypes from "prop-types";
-import { StyledH3 } from "./Article.styles";
+import { Wrapper, StyledH2, Subtitle, TextWrap } from "./Article.styles";
 
-const Article = ({ title, content }) => {
+const Article = ({ url, id, title, content }) => {
   return (
-    <>
-      <StyledH3>{title}</StyledH3>
-      <Paragraph content={content} />
-      <hr />
-    </>
+    <Wrapper>
+      <img src={url} alt={title} />
+      <TextWrap>
+        <StyledH2>{id}</StyledH2>
+        <Subtitle>{title}</Subtitle>
+        <Paragraph content={content} />
+      </TextWrap>
+    </Wrapper>
   );
-};
-
-Paragraph.propTypes = {
-  title: PropTypes.string,
-  content: PropTypes.string,
 };
 
 export default Article;

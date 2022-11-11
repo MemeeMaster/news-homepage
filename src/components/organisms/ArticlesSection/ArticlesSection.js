@@ -1,12 +1,13 @@
 import React from "react";
 import Article from "../../molecules/Article/Article";
 import { data } from "../../../data/data";
+import { Wrapper } from "./ArticlesSection.styles";
 
 const ArticlesSection = () => {
   const articles = data.articles;
 
   return (
-    <div>
+    <Wrapper>
       {articles.map((el) => (
         <Article
           key={el.id}
@@ -16,7 +17,7 @@ const ArticlesSection = () => {
           content={el.content}
         />
       ))}
-    </div>
+    </Wrapper>
   );
 };
 

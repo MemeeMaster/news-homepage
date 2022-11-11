@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import mq from "../../../assets/styles/responsiveDesign";
 
 export const Wrapper = styled.div`
   padding: 1em;

@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ScreenSizeContext } from "../../../providers/ContextProvider";
 import { Wrapper } from "./Navigation.styles";
 import Logo from "../../atoms/Logo/Logo";
 import NavBars from "../../atoms/NavBars/NavBars";
+import NavBtns from "../NavBtns/NavBtns";
 
 const Navigation = () => {
+  const { screenWidth } = useContext(ScreenSizeContext);
+
   return (
     <Wrapper>
       <Logo />
-      <NavBars />
+      {screenWidth >= 768 ? <NavBtns /> : <NavBars />}
     </Wrapper>
   );
 };
